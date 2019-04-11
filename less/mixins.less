@@ -1,1 +1,14 @@
 // Mixins in here
+
+.flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@color, @font-size, @font-color: @white){
+    background-color: @color;
+    font-size: @font-size;
+    color: @font-color;
+}
