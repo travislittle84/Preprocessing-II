@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+.menu {
+    padding: 15px 0;
+    height: 70px;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+        height: 100px;
+    }
+    
+    nav {
+        width: 100%;
+        .flex(row, space-around, center);
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        .link();   
+    }
+    #title {        
+        width: 45%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }        
+    }
+
+}

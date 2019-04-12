@@ -1,10 +1,22 @@
 
+// Debug
+@testBorder: 1px solid red;
+
+// Size assignments
+@16px: 1.6rem;
+@linkFontSize: @16px;
+
+// Font assignments
+@siteFontFamily: 'Roboto', sans-serif;
+@linkFontFamily: @siteFontFamily;
+
 // Color assignments 
 @font-color: @shark;
 @button-bg: @eastern-blue;
-@main-bg:  @white;
+@main-bg: @white;
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
+@linkColor: @shark;
 
 // Colors
 @white: #FFFFFF;
@@ -12,3 +24,11 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+@teal: #008080;
+
+// Links stack
+@linkDecoration: none;
+@linkHoverDecoration: underline;
+
+// Escapes
+@mobile: ~"(max-width: 500px)";

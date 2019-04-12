@@ -1,24 +1,50 @@
 .home {
 
+  .header {
+    padding: 0 1%;
+    border-bottom: 2px dashed @navigation-border;
+    img {
+      margin-bottom: 15px;
+    }
+  } 
   .content-section {
-    margin: 30px 0;
+    margin: 30px 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 1%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0 1%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+          padding: 0 1%;
+        }
       }
     }
   }
@@ -27,35 +53,70 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 1%;
+      }
     }
   }
-
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1%;
+      padding-bottom: 30px;
+    }
 
     img {
       border-radius: 10px;
     }
   }
-
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+
+      @media @mobile {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 75%;
+      }
+    } 
+  }
+
+  .btn {
+    .link();
+    .button(@teal,2rem);
+    padding: 10px;
+    border-radius: 14px;
+    text-align: center;
+    vertical-align: center;    
+   
   }
 }// home
+
