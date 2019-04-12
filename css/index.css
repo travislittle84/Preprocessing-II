@@ -195,10 +195,10 @@ img {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: black;
+  color: #212529;
 }
 .menu .menu-item a:visited {
-  color: black;
+  color: #212529;
 }
 .menu .menu-item a:hover {
   text-decoration: underline;
@@ -255,7 +255,6 @@ img {
   }
 }
 .home .content-section .img-content {
-  border: 1px solid green;
   width: 48%;
   padding-left: 1%;
 }
@@ -320,7 +319,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    border: 1px solid red;
     width: 100%;
     flex-direction: column;
   }
@@ -331,7 +329,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    border: 1px solid green;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 75%;
@@ -345,4 +342,39 @@ img {
   border-radius: 14px;
   text-align: center;
   vertical-align: center;
+}
+.home .btn a:link {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #212529;
+}
+.home .btn a:visited {
+  color: #212529;
+}
+.home .btn a:hover {
+  text-decoration: underline;
+}
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.form-container .form-field-description {
+  align-self: flex-start;
+  margin-left: 3px;
+  padding: 5px;
+  color: #212529;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+.form-container .form-field {
+  width: 96%;
+  padding: 10px 0;
+  margin-bottom: 5px;
 }

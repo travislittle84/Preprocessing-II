@@ -1,7 +1,5 @@
 // Navigation Styles here
 
-
-
 .menu {
     padding: 15px 0;
     height: 70px;
@@ -13,24 +11,12 @@
     
     nav {
         width: 100%;
-
         .flex(row, space-around, center);
         flex-wrap: wrap;
     }
 
     .menu-item {
-        a:link {
-            font-size: @linkFontSize;
-            font-family: @linkFontFamily;
-            text-decoration: @linkDecoration;
-            color: @linkColor;            
-        }
-        a:visited {
-            color: @linkColor;
-        }
-        a:hover{
-            text-decoration: @linkHoverDecoration;
-        }        
+        .link();   
     }
     #title {        
         width: 45%;

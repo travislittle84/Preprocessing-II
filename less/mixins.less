@@ -12,3 +12,18 @@
     font-size: @font-size;
     color: @font-color;
 }
+
+.link(){
+    a:link {
+        font-size: @linkFontSize;
+        font-family: @linkFontFamily;
+        text-decoration: @linkDecoration;
+        color: @linkColor;            
+        }
+    a:visited {
+        color: @linkColor;
+    }
+    a:hover{
+        text-decoration: @linkHoverDecoration;
+    }        
+}
